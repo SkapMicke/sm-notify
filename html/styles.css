@@ -1,0 +1,196 @@
+body {
+  margin-top: 16px;
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+  margin-left: 10px; 
+}
+
+.toast {
+  width: 200px;
+  float: right;
+}
+
+.wrapper {
+  width: 100px;
+  height: auto;
+  background-color: #1e1e1e;
+  float: right;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+  margin-right: 10px;
+}
+
+.main {
+  margin: 10px 16px 12px 30px;
+  position: relative;
+}
+
+.main::before {
+  font-size: 24px;
+  top: calc(50% - 12px);
+  left: -40px;
+  line-height: 24px;
+  position: absolute;
+}
+
+.success {
+  color: #c9dbd1;
+  padding: 8px; 
+  border-radius: 0px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.733);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px; 
+  border: 3px solid rgb(85, 255, 0); 
+
+}
+
+
+.success::before {
+  content: "\f058";
+  font-family: "Font Awesome 5 Free";
+  color: #0ee769;
+  margin-right: 10px;
+}
+
+.info {
+  color: #c3ddfd;
+  padding: 8px; 
+  border-radius: 0px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.733);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid rgb(225, 255, 0); 
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+.info::before {
+  content: "\f05a";
+  font-family: "Font Awesome 5 Free";
+  color: #2f83ff;
+  margin-right: 3px;
+}
+
+.warning {
+  color: #e9e5db;
+  padding: 8px; 
+  border-radius: 0px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.733);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid rgb(225, 255, 0);
+  background: linear-gradient(to right, #4b6cb7, #182848); 
+}
+
+.warning::before {
+  content: "\f071";
+  font-family: "Font Awesome 5 Free";
+  color: #ffc107;
+  margin-right: 3px;
+}
+
+.error {
+  color: #ddc8c8;
+  padding: 8px; 
+  border-radius: 0px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.733);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid rgb(255, 0, 0); 
+  background: linear-gradient(to right, #000000, #434343); 
+}
+
+.error::before {
+  content: "\f06a";
+  font-family: "Font Awesome 5 Free";
+  color: #dc3545;
+  margin-right: 3px;
+}
+
+.phonemessage-icon::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f7cd";
+  color: #f38847;
+}
+
+.phonemessage {
+  color: #fff;
+  padding: 8px; 
+  border-radius: 0px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.733);
+  border-left: 4px solid #f38847; 
+  background-color: rgba(20, 20, 20, 0.85);
+}
+
+.neutral-icon::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f11c";
+  color: #6c757d;
+}
+
+.neutral {
+  color: #fff;
+  padding: 8px;
+  border-radius: 0px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.733);
+  border-left: 4px solid #6c757d;
+  background-color: rgba(20, 20, 20, 0.85);
+}
+
+.neutral-border {
+    border-left: 4px solid #6c757d;
+}
+
+body {
+  margin-top: 16px;
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+  margin-left: 10px;
+}
+
+.toast {
+  width: 100px;
+  float: right;
+}
+
+.wrapper {
+  width: 100px;
+  height: auto;
+  float: right;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+}
+
+.main {
+  margin: 10px 16px 12px 30px;
+  position: relative;
+}
+
+.main::before {
+  font-size: 24px;
+  top: calc(50% - 12px);
+  left: -40px;
+  line-height: 24px;
+  position: absolute;
+}
+
+.success, .info, .warning, .error, .phonemessage, .neutral {
+  background: linear-gradient(to right, #1a1a1a, #3a0ca3, #1a1a1a, #3a0ca3); /* Mörka färger */
+  background-size: 400% 400%;
+  animation: gradientChange 5s ease infinite, popIn 0.5s ease forwards; /* Lägg till pop in-effekten */
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+  border-radius: 0px;
+}
+  
+@keyframes gradientChange {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes popIn {
+  0% { transform: scale(0.5); opacity: 0; } /* Skalas ner och osynlig */
+  100% { transform: scale(0.9); opacity: 1; } /* Skalas upp och synlig */
+}
