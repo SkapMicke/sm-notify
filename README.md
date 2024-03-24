@@ -1,3 +1,4 @@
+SK-Scripts: https://discord.gg/RWUGu3UYN3
 Heeey! Thanks for using my notify script!
 if you got any questions, Feel free to contact me on discord. skapmicke
 
